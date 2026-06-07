@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Reveal panels on scroll/load using IntersectionObserver
   const panels = document.querySelectorAll('.card-panel');
-  
+
   const observerOptions = {
     root: null,
     rootMargin: '0px',
