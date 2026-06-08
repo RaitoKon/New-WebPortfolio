@@ -173,8 +173,8 @@ svg {
 }
 
 .logo-line img {
-  height: 1.5em;
-  width: auto;
+  width: 3em;
+  height: auto;
   display: block;
 }
 
@@ -333,6 +333,22 @@ svg {
   line-height: 0.95;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+
+  animation:
+    reveal 10000ms ease-in-out forwards 200ms,
+    glow 10000ms linear infinite 2000ms;
+}
+
+@keyframes reveal {
+  100% {
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 10px #fff;
+  }
 }
 
 .hero-subtitle {
@@ -396,7 +412,8 @@ svg {
 .project-tabs {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
 }
 
 .project-tab {
@@ -1306,8 +1323,7 @@ svg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
-  align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   position: relative;
   z-index: 2;
 }
@@ -1509,6 +1525,14 @@ svg {
     padding: 1.5rem;
   }
 
+  .logo {
+    display: none;
+  }
+
+  .panel-header {
+    justify-content: center;
+  }
+
   .panel-nav {
     gap: 1.25rem;
   }
@@ -1567,9 +1591,27 @@ svg {
   .scroll-indicator {
     display: none;
   }
+
+  .developer-details-column {
+    padding: 0;
+  }
+
 }
 
 @media (max-width: 480px) {
+
+  .developer-image-container {
+    max-width: none;
+  }
+
+
+  .panel-header {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: start;
+
+  }
+
   .project-tabs {
     gap: 1rem;
   }
@@ -1582,26 +1624,5 @@ svg {
   .social-links {
     flex-direction: row;
     gap: 1rem;
-  }
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .card-panel {
-    transition: none;
-    opacity: 1;
-    transform: none;
-  }
-
-  .scroll-line {
-    animation: none;
-  }
-
-  .project-showcase {
-    animation: none;
   }
 }

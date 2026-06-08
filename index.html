@@ -13,6 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Syne:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -56,6 +57,7 @@
           <span>ASP.NET Core</span>
           <span>Azure</span>
           <span>SQL Server</span>
+          <span>Laravel</span>
           <span>Figma</span>
         </div>
       </div>
@@ -68,7 +70,7 @@
               <path d="M2 7l10 7 10-7" />
             </svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
@@ -105,132 +107,8 @@
         </nav>
       </header>
 
-      <div class="projects-content">
-        <div class="project-tabs" role="tablist" aria-label="Featured projects">
-          <button class="project-tab active" role="tab" aria-selected="true" aria-controls="project-tssrs"
-            id="tab-tssrs" data-project="tssrs">TSSRS</button>
-          <button class="project-tab" role="tab" aria-selected="false" aria-controls="project-abansi" id="tab-abansi"
-            data-project="abansi">AbansiBabayi</button>
-        </div>
-
-        <!-- TSSRS Project -->
-        <article class="project-showcase active" id="project-tssrs" role="tabpanel" aria-labelledby="tab-tssrs">
-          <div class="project-mockups" aria-hidden="true">
-            <div class="mockup mockup--left">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-dashboard">
-                <div class="mock-sidebar"></div>
-                <div class="mock-main">
-                  <div class="mock-stat-row">
-                    <div class="mock-stat"></div>
-                    <div class="mock-stat"></div>
-                    <div class="mock-stat"></div>
-                  </div>
-                  <div class="mock-table">
-                    <div class="mock-row"></div>
-                    <div class="mock-row"></div>
-                    <div class="mock-row"></div>
-                    <div class="mock-row"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mockup mockup--center">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-form">
-                <div class="mock-form-header"></div>
-                <div class="mock-form-field"></div>
-                <div class="mock-form-field"></div>
-                <div class="mock-form-field wide"></div>
-                <div class="mock-form-btn"></div>
-              </div>
-            </div>
-            <div class="mockup mockup--right">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-tracker">
-                <div class="mock-track-item active"></div>
-                <div class="mock-track-item"></div>
-                <div class="mock-track-item"></div>
-                <div class="mock-track-item"></div>
-              </div>
-            </div>
-          </div>
-
-          <h2 class="project-title">TSSRS</h2>
-          <p class="project-tagline">Iloilo City Hall Technical Support Service Request System</p>
-          <p class="project-description">
-            Centralized service request platform replacing paper-based repair workflows across 70+ Iloilo City Hall
-            offices.
-            Full request lifecycle — submission, approval, technician assignment, tracking, and completion —
-            with role-based access for staff, administrators, and technicians.
-          </p>
-          <div class="project-meta">
-            <span>PHP · MySQL · MVC</span>
-            <span>2026 · OJT</span>
-          </div>
-          <a href="../TSSRS-Web-System-Native" class="btn-outline" target="_blank" rel="noopener noreferrer">View
-            Project</a>
-        </article>
-
-        <!-- AbansiBabayi Project -->
-        <article class="project-showcase" id="project-abansi" role="tabpanel" aria-labelledby="tab-abansi" hidden>
-          <div class="project-mockups" aria-hidden="true">
-            <div class="mockup mockup--left">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-events">
-                <div class="mock-event-card"></div>
-                <div class="mock-event-card"></div>
-                <div class="mock-event-card short"></div>
-              </div>
-            </div>
-            <div class="mockup mockup--center">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-pos">
-                <div class="mock-pos-grid">
-                  <div class="mock-pos-item"></div>
-                  <div class="mock-pos-item"></div>
-                  <div class="mock-pos-item"></div>
-                  <div class="mock-pos-item"></div>
-                </div>
-                <div class="mock-pos-total"></div>
-              </div>
-            </div>
-            <div class="mockup mockup--right">
-              <div class="mockup-chrome">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-body mockup-members">
-                <div class="mock-member"></div>
-                <div class="mock-member"></div>
-                <div class="mock-member"></div>
-              </div>
-            </div>
-          </div>
-
-          <h2 class="project-title">AbansiBabayi</h2>
-          <p class="project-tagline">Web-Based Management System for Iloilo Girl Scout Council</p>
-          <p class="project-description">
-            Multi-entity registration and approval ecosystem for Scouts and Troop Leaders.
-            Event management, POS inventory tracking, and hierarchical approval workflows —
-            deployed on Microsoft Azure for organization-wide scale.
-          </p>
-          <div class="project-meta">
-            <span>ASP.NET Core · SQL Server · Azure</span>
-            <span>2025</span>
-          </div>
-          <button class="btn-outline" disabled title="Private deployment">View Project</button>
-        </article>
-      </div>
+      <div class="project-tabs"></div>
+      <div class="projects-container"></div>
 
       <footer class="panel-footer">
         <div class="social-links" aria-label="Social links">
@@ -240,7 +118,7 @@
               <path d="M2 7l10 7 10-7" />
             </svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
@@ -347,7 +225,7 @@
               <path d="M2 7l10 7 10-7" />
             </svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
@@ -463,7 +341,7 @@
                       </svg>
                     </span>
                     <span class="award-body">
-                      <strong>Cum Laude</strong>
+                      <strong>Cum Laude - Bachelor of Science in Information Technology</strong>
                       <em>Central Philippine University · 2026</em>
                     </span>
                   </li>
@@ -475,7 +353,7 @@
                       </svg>
                     </span>
                     <span class="award-body">
-                      <strong>Best in Thesis Presentation</strong>
+                      <strong>Best in Thesis Presentation (AbansiBabayi)</strong>
                       <em>CPU College of Computer Studies · 2026</em>
                     </span>
                   </li>
@@ -494,7 +372,7 @@
               <path d="M2 7l10 7 10-7" />
             </svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
@@ -589,7 +467,7 @@
               <path d="M2 7l10 7 10-7" />
             </svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
@@ -622,6 +500,7 @@
     }
   </style>
   <script src="js/minigl.js"></script>
+  <script src="js/project-data.js"></script>
   <script>
     const gradient = new Gradient();
     gradient.initGradient('#gradient-canvas');

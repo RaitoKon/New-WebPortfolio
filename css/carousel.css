@@ -1,0 +1,254 @@
+.project-carousel {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* container where images live */
+.image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* base image card */
+.image-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+    transform: translate(-50%, -50%) scale(0.8);
+    animation: fade-in 0.8s ease-in-out;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* subtle overlay */
+.image-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* CENTER */
+.image-placeholder.center {
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 5;
+    opacity: 1;
+    filter: saturate(1);
+}
+
+/* LEFT */
+.image-placeholder.left {
+    transform: translate(-80%, -50%) scale(0.75);
+    z-index: 4;
+    opacity: 0.7;
+    filter: saturate(0.3);
+}
+
+/* RIGHT */
+.image-placeholder.right {
+    transform: translate(-20%, -50%) scale(0.75);
+    z-index: 4;
+    opacity: 0.7;
+    filter: saturate(0.3);
+}
+
+/* FAR LEFT */
+.image-placeholder.left-offscreen {
+    transform: translate(-100%, -50%) scale(0.6);
+    z-index: 3;
+    opacity: 0.3;
+    filter: saturate(0.1);
+}
+
+/* FAR RIGHT */
+.image-placeholder.right-offscreen {
+    transform: translate(-0%, -50%) scale(0.6);
+    z-index: 3;
+    opacity: 0.3;
+    filter: saturate(0.1);
+}
+
+/* hidden */
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.project-carousel {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* container where images live */
+.image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* base image card */
+.image-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.5s, opacity 0.5s, filter 0.5s;
+    transform: translate(-50%, -50%) scale(0.8);
+    animation: fade-in 0.8s ease-in-out;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* subtle overlay */
+.image-placeholder::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.0) 30%,
+            rgba(255, 255, 255, 0.05) 50%,
+            rgba(255, 255, 255, 0.0) 80%,
+            rgba(255, 255, 255, 0.3) 100%);
+}
+
+/* CENTER */
+.image-placeholder.center {
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 5;
+    opacity: 1;
+    filter: saturate(1);
+}
+
+/* LEFT */
+.image-placeholder.left {
+    transform: translate(-80%, -50%) scale(0.75);
+    z-index: 4;
+    opacity: 0.7;
+    filter: saturate(0.3);
+}
+
+/* RIGHT */
+.image-placeholder.right {
+    transform: translate(-20%, -50%) scale(0.75);
+    z-index: 4;
+    opacity: 0.7;
+    filter: saturate(0.3);
+}
+
+/* FAR LEFT */
+.image-placeholder.left-offscreen {
+    transform: translate(-100%, -50%) scale(0.6);
+    z-index: 3;
+    opacity: 0.3;
+    filter: saturate(0.1);
+}
+
+/* FAR RIGHT */
+.image-placeholder.right-offscreen {
+    transform: translate(-0%, -50%) scale(0.6);
+    z-index: 3;
+    opacity: 0.3;
+    filter: saturate(0.1);
+}
+
+/* hidden */
+.invisible {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* base hover effect */
+.image-placeholder:hover {
+    filter: saturate(1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* CENTER hover (slight pop) */
+.image-placeholder.center:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* LEFT / RIGHT hover */
+.image-placeholder.left:hover {
+    transform: translate(-80%, -50%) scale(0.8);
+}
+
+.image-placeholder.right:hover {
+    transform: translate(-20%, -50%) scale(0.8);
+}
+
+/* FAR LEFT / RIGHT hover */
+.image-placeholder.left-offscreen:hover {
+    transform: translate(-100%, -50%) scale(0.65);
+}
+
+.image-placeholder.right-offscreen:hover {
+    transform: translate(0%, -50%) scale(0.65);
+}
+
+@media screen and (max-width: 600px) {
+
+    .image-carousel {
+        display: flex;
+        justify-items: content;
+        height: 15rem;
+        overflow: hidden;
+    }
+
+    .project-carousel {
+        height: 15rem;
+    }
+
+    .image-placeholder.center {
+        display: block;
+        width: 80%;
+        height: auto;
+    }
+
+    .image-placeholder.left,
+    .image-placeholder.right,
+    .image-placeholder.left-offscreen,
+    .image-placeholder.right-offscreen {
+        width: 80%;
+        height: auto;
+    }
+
+
+}
