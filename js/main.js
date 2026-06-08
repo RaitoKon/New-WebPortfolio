@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       formStatus.className = 'form-status';
 
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwFuelduhTX2QZ3-aPLneVEo-GkkDTX9wdWdlRSGpTrumWfwYBA0ALizfoKvwaHDOsS/exec";
+        "https://script.google.com/macros/s/AKfycbxocUhmaSRiEfuxv09_H3h4U2r8RRtqEy6hynlpPXFTY2fKE2yQsuWazllJIv5BZOe6/exec";
 
       try {
 
