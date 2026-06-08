@@ -277,6 +277,7 @@ svg {
   text-transform: uppercase;
 }
 
+
 @keyframes scrollPulse {
 
   0%,
@@ -1000,7 +1001,7 @@ svg {
   grid-template-columns: 1fr 1fr;
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
-  padding: 2rem 0;
+  padding: 2rem 0 1rem 0;
   position: relative;
   z-index: 2;
 }
@@ -1025,7 +1026,6 @@ svg {
 
 .developer-image-container {
   position: relative;
-  max-width: 340px;
   margin-bottom: 2rem;
 }
 
@@ -1173,6 +1173,11 @@ svg {
   font-weight: 400;
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.developer-other-items {
+  display: flex;
+  gap: 4rem;
 }
 
 /* Awards list */
@@ -1601,14 +1606,16 @@ svg {
     padding: 0;
   }
 
+  .developer-other-items {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+
 }
 
 @media (max-width: 480px) {
-
-  .developer-image-container {
-    max-width: none;
-  }
-
 
   .panel-header {
     overflow-x: scroll;
