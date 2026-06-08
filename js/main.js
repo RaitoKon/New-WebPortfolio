@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formStatus = document.getElementById('formStatus');
 
   if (contactForm && formStatus) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // Retrieve form values
@@ -46,14 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const lastNameInput = document.getElementById('lastName');
       const emailInput = document.getElementById('email');
       const messageInput = document.getElementById('message');
+      const phoneNoInput = document.getElementById('phoneNo');
 
       const firstName = firstNameInput ? firstNameInput.value.trim() : '';
       const lastName = lastNameInput ? lastNameInput.value.trim() : '';
       const email = emailInput ? emailInput.value.trim() : '';
       const message = messageInput ? messageInput.value.trim() : '';
+      const phoneNo = phoneNoInput ? phoneNoInput.value.trim() : '';
 
       // Validate inputs
-      if (!firstName || !lastName || !email || !message) {
+      if (!firstName || !lastName || !email || !message || !phoneNo) {
         formStatus.textContent = 'Please fill out all required fields.';
         formStatus.className = 'form-status error';
         return;
@@ -71,12 +73,47 @@ document.addEventListener('DOMContentLoaded', () => {
       formStatus.textContent = 'Sending message...';
       formStatus.className = 'form-status';
 
-      // Simulate network request/latency
-      setTimeout(() => {
-        formStatus.textContent = 'Thank you! Your message has been sent successfully.';
-        formStatus.className = 'form-status success';
-        contactForm.reset();
-      }, 1500);
+      const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbwFuelduhTX2QZ3-aPLneVEo-GkkDTX9wdWdlRSGpTrumWfwYBA0ALizfoKvwaHDOsS/exec";
+
+      try {
+
+        const formData = new FormData(contactForm);
+
+        const response = await fetch(SCRIPT_URL, {
+          method: "POST",
+          body: formData
+        });
+
+        if (response.ok) {
+
+          formStatus.textContent =
+            "Thank you! Your message has been sent successfully.";
+
+          formStatus.className =
+            "form-status success";
+
+          contactForm.reset();
+
+        } else {
+
+          formStatus.textContent =
+            "Failed to send message.";
+
+          formStatus.className =
+            "form-status error";
+        }
+
+      } catch (error) {
+
+        console.error(error);
+
+        formStatus.textContent =
+          "An error occurred while sending.";
+
+        formStatus.className =
+          "form-status error";
+      }
     });
   }
 
@@ -381,3 +418,4 @@ function initializeCarousel() {
     updateCarousel();
   });
 }
+
