@@ -231,7 +231,7 @@ function renderProjects() {
               <a
                 href="${project.url}"
                 class="btn-outline"
-                target="_blank"
+                target="_self"
                 rel="noopener noreferrer">
                 View Story
               </a>
