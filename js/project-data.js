@@ -7,7 +7,7 @@ const projects = [
             "Centralized service request platform replacing paper-based repair workflows across 70+ Iloilo City Hall offices. Full request lifecycle — submission, approval, technician assignment, tracking, and completion.",
         technologies: "PHP · MySQL · MVC",
         year: "2026 · OJT",
-        url: "../TSSRS-Web-System-Native",
+        url: "info-tssrs.html",
         public: true,
         images: [
             "img/tssrs-4.png",

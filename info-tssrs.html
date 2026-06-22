@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The story behind TSSRS — how a manual service request process at Iloilo City Hall became a digital workflow.">
+  <title>TSSRS — Project Story | Tairo Garcia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/info-story.css">
+</head>
+
+<body class="story-page">
+
+  <canvas style="
+      --gradient-color-1:#1a1a1a;
+      --gradient-color-2:#1e1e1e;
+      --gradient-color-3:#2b2b2b;
+      --gradient-color-4:#3c3c3c;
+    " id="gradient-canvas" data-transition-in>
+  </canvas>
+
+  <div class="page-grain" aria-hidden="true"></div>
+
+  <div class="story-top-bar" aria-hidden="true">
+    <div class="story-top-bar-inner">
+      <span class="story-top-label">TSSRS Story · <span class="story-top-chapter">Introduction</span></span>
+      <div class="story-top-progress">
+        <div class="story-top-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="story-progress" aria-label="Story progress">
+    <a href="#chapter-01" class="story-progress-dot active" data-section="01" aria-label="Introduction"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-02" class="story-progress-dot" data-section="02" aria-label="The Observation"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-03" class="story-progress-dot" data-section="03" aria-label="Workflow First"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-04" class="story-progress-dot" data-section="04" aria-label="Mapping"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-05" class="story-progress-dot" data-section="05" aria-label="Designing TSSRS"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-06" class="story-progress-dot" data-section="06" aria-label="Built for Roles"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-07" class="story-progress-dot" data-section="07" aria-label="People Before Code"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-08" class="story-progress-dot" data-section="08" aria-label="Beyond Features"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-09" class="story-progress-dot" data-section="09" aria-label="The Question"></a>
+  </nav>
+
+  <!-- .01 Introduction -->
+  <section class="section-wrapper story-section" id="chapter-01" data-section="01">
+    <span class="section-index">.01</span>
+    <div class="card-panel card-panel--story card-panel--story-hero">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+        <nav class="panel-nav" aria-label="Story navigation">
+          <a href="#chapter-01" class="active">Story</a>
+          <a href="index.html#projects">Projects</a>
+        </nav>
+      </header>
+
+      <div class="story-hero-wrap">
+        <div class="story-hero-copy">
+          <p class="story-hero-eyebrow" data-reveal>Project Story</p>
+          <p class="story-hero-subtitle" data-reveal style="--reveal-delay: 160ms">
+            Technical Support Service Request System
+          </p>
+          <h1 class="story-hero-title" data-reveal style="--reveal-delay: 80ms">TSSRS</h1>
+          <p class="story-hero-subtitle" style="font-size: 1.3rem;" data-reveal style="--reveal-delay: 160ms">
+            Turning a Manual Service Request Process into a Digital Workflow
+          </p>
+          <div class="story-meta" data-reveal style="--reveal-delay: 240ms">
+            <span>Iloilo City Hall</span>
+            <span>2026 · OJT</span>
+          </div>
+          <div class="story-scroll-hint" data-reveal style="--reveal-delay: 320ms">
+            <span class="story-scroll-hint-line"></span>
+            Scroll to begin
+          </div>
+        </div>
+        <div class="story-hero-visual" data-reveal style="--reveal-delay: 200ms">
+          <img src="img/tssrs-1.png" style="transform: scale(1.05) translateY(-3rem);" alt="Presenting TSSRS at Iloilo City Hall DASMO office"
+            data-parallax loading="eager">
+          <span class="story-hero-visual-badge">DASMO · City Hall</span>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 7l10 7 10-7" />
+            </svg>
+          </a>
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+        </div>
+        <a href="#chapter-02" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .02 The Observation -->
+  <section class="section-wrapper story-section" id="chapter-02" data-section="02">
+    <span class="section-index">.02</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-body-grid">
+        <div class="story-copy">
+          <p class="story-chapter-label" data-reveal>Chapter 01</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">More Than a Software Project</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+            TSSRS began as more than just a software development project assigned by the office to work on. It started with a simple observation:
+            service requests were being handled through a process that relied heavily on manual tracking,
+            communication, and paperwork.
+          </p>
+          <p class="story-body" data-reveal style="--reveal-delay: 180ms">
+            While the workflow itself was functional, monitoring requests, assigning responsibilities, and
+            generating reports required significant effort and coordination.
+          </p>
+        </div>
+        <div class="story-visual" data-reveal style="--reveal-delay: 200ms">
+          <img src="img/tssrs-story-team.png" style="transform: scale(1.05)" alt="Team discussion during workflow analysis at City Hall"
+            data-parallax loading="lazy">
+          <span class="story-visual-caption">Understanding the process first</span>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-03" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .03 Workflow First -->
+  <section class="section-wrapper story-section" id="chapter-03" data-section="03">
+    <span class="section-index">.03</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-quote-break">
+        <p class="story-chapter-label" data-reveal>Chapter 02</p>
+        <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">A Workflow Problem</h2>
+        <p class="story-pullquote story-pullquote--large" data-reveal style="--reveal-delay: 140ms">
+          Rather than viewing the situation as a programming challenge, I approached it as a workflow problem.
+        </p>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-04" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .04 Mapping the System -->
+  <section class="section-wrapper story-section" id="chapter-04" data-section="04">
+    <span class="section-index">.04</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-body-grid story-body-grid--reverse">
+        <div class="story-copy">
+          <p class="story-chapter-label" data-reveal>Chapter 03</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">Mapping the System</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+            My first step was understanding how requests moved through the organization. I identified the
+            different people involved, their responsibilities, and the information they needed at each stage
+            of the process. I began tracing the journey of a request.
+          </p>
+          <p>"Who creates it?"</p>
+          <p>"Who reviews it?"</p>
+          <p>"Who acts on it?"</p>
+          <p>"Who reports on it?"</p>
+          <p>The more I mapped the workflow, the more I realized I wasn't designing screens.</p>
+          <p>I was designing a system of responsibilities.</p>
+          <p class="story-body" data-reveal style="--reveal-delay: 180ms">
+            I mapped how a request was created, reviewed, assigned, completed, and eventually reported. This
+            helped me see the workflow as a system rather than a collection of individual tasks.
+          </p>
+          <div class="workflow-track" aria-label="Request lifecycle">
+            <div class="workflow-step" style="--step-delay: 300ms">
+              <span class="workflow-step-label">Create</span>
+            </div>
+            <div class="workflow-step" style="--step-delay: 380ms">
+              <span class="workflow-step-label">Review</span>
+            </div>
+            <div class="workflow-step" style="--step-delay: 460ms">
+              <span class="workflow-step-label">Assign</span>
+            </div>
+            <div class="workflow-step" style="--step-delay: 460ms">
+              <span class="workflow-step-label">Repair</span>
+            </div>
+            <div class="workflow-step" style="--step-delay: 540ms">
+              <span class="workflow-step-label">Complete</span>
+            </div>
+            <div class="workflow-step" style="--step-delay: 620ms">
+              <span class="workflow-step-label">Report</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-visual story-visual--tall" data-reveal style="--reveal-delay: 200ms">
+          <img src="img/tssrs-story-presentation.png" alt="Service request workflow projected during system walkthrough"
+            data-parallax loading="eager">
+          <span class="story-visual-caption">The workflow, visualized</span>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-05" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .05 Designing TSSRS -->
+  <section class="section-wrapper story-section" id="chapter-05" data-section="05">
+    <span class="section-index">.05</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-cinematic" data-reveal>
+        <img src="img/tssrs-story-demo.png" alt="TSSRS dashboard demo on laptop during office presentation"
+          data-parallax loading="lazy">
+        <div class="story-cinematic-overlay"></div>
+        <div class="story-cinematic-content">
+          <p class="story-chapter-label" style="color: white;" data-reveal>Chapter 04</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 80ms">Designing TSSRS</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 160ms">
+            From that analysis, I designed TSSRS — the Technical Support Service Request System — a web-based
+            platform that centralizes service request management into a single web application.
+          </p>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-06" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .06 Built for Roles -->
+  <section class="section-wrapper story-section" id="chapter-06" data-section="06">
+    <span class="section-index">.06</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-body-grid">
+        <div class="story-copy">
+          <p class="story-chapter-label" data-reveal>Chapter 05</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">Built for Every Role</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+            The system allows users to submit requests, track their progress, assign technicians, update request
+            statuses, and generate reports.
+          </p>
+          <p class="story-body" data-reveal style="--reveal-delay: 180ms">
+            Different user roles were implemented so each participant in the workflow could access the tools and
+            information relevant to their responsibilities.
+          </p>
+          <div class="story-features" data-reveal style="--reveal-delay: 240ms">
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">01</div>
+              <div class="story-feature-text">Submit Requests</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles"><span class="tooltip-role">Users</span></span>
+                <span class="tooltip-desc">Submit a service request through the portal for any device repair.</span>
+              </span>
+            </div>
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">02</div>
+              <div class="story-feature-text">Track Progress</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles">
+                  <span class="tooltip-role">Users</span>
+                  <span class="tooltip-role">Admin</span>
+                  <span class="tooltip-role">Technician</span>
+                </span>
+                <span class="tooltip-desc">Follow a request's status in real time from submission to assignment to resolution. Each role sees only the tools and data relevant to their responsibilities. </span>
+              </span>
+            </div>
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">03</div>
+              <div class="story-feature-text">Assign Technicians</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles"><span class="tooltip-role">Admin</span></span>
+                <span class="tooltip-desc">Route incoming requests to the right technician based on workload, availability, and skill.</span>
+              </span>
+            </div>
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">04</div>
+              <div class="story-feature-text">Update Statuses</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles"><span class="tooltip-role">Technician</span></span>
+                <span class="tooltip-desc">Technicians log progress, updates, and issues so requesters and admins always see the current state. Technicians can also message users directly through the <b>Built-In Messaging System</b>.</span>
+              </span>
+            </div>
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">05</div>
+              <div class="story-feature-text">Generate Reports</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles"><span class="tooltip-role">Admin</span></span>
+                <span class="tooltip-desc">Every service request feeds detailed volume, turnaround time, and technician resolution data into the dashboard for reporting.</span>
+              </span>
+            </div>
+            <div class="story-feature tooltip" tabindex="0">
+              <div class="story-feature-icon">06</div>
+              <div class="story-feature-text">Equipment Return and Completion</div>
+              <span class="tooltiptext" role="tooltip">
+                <span class="tooltip-roles">
+                  <span class="tooltip-role">Users</span>
+                  <span class="tooltip-role">Admin</span>
+                </span>
+                <span class="tooltip-desc">Administrators will notify users for service request completion and process the returning of the equipment.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="story-visual" data-reveal style="--reveal-delay: 200ms">
+          <img src="img/tssrs-story-demo.png" alt="TSSRS admin dashboard showing request pipeline and metrics"
+            data-parallax loading="lazy">
+          <span class="story-visual-caption">Live system demo</span>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-07" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .07 People Before Code -->
+  <section class="section-wrapper story-section" id="chapter-07" data-section="07">
+    <span class="section-index">.07</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-body-grid story-body-grid--reverse">
+        <div class="story-copy">
+          <p class="story-chapter-label" data-reveal>Chapter 06</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">People Before Code</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+            One of the most valuable lessons I learned during this project was that successful software is not
+            built by starting with code. It is built by first understanding the people, processes, and problems
+            involved.
+          </p>
+          <p class="story-pullquote" data-reveal style="--reveal-delay: 200ms">
+            The code became the implementation of a solution that was already designed through workflow analysis.
+          </p>
+        </div>
+        <div class="story-visual" data-reveal style="--reveal-delay: 180ms">
+          <img src="img/tssrs-story-team.png" alt="Team collaborating on requirements and workflow design"
+            data-parallax loading="lazy">
+          <span class="story-visual-caption">People at the center of the process</span>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-08" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .08 Beyond Features -->
+  <section class="section-wrapper story-section" id="chapter-08" data-section="08">
+    <span class="section-index">.08</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-cinematic" data-reveal>
+        <img src="img/tssrs-5.png" alt="Presenting TSSRS service request workflow to stakeholders"
+          data-parallax loading="lazy">
+        <div class="story-cinematic-blur"></div>
+        <div class="story-cinematic-overlay"></div>
+        <div class="story-cinematic-content">
+          <p class="story-chapter-label" data-reveal>Chapter 07</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 80ms">Beyond Features</h2>
+          <p class="story-body" data-reveal style="--reveal-delay: 160ms">
+            TSSRS taught me how to think beyond individual features and focus on system design. More importantly,
+            it showed me how technology can transform an existing process into a more organized, efficient, and
+            transparent system.
+          </p>
+          <div class="story-tags">
+            <span class="story-tag" style="--tag-delay: 200ms">Requirements</span>
+            <span class="story-tag" style="--tag-delay: 260ms">Database Design</span>
+            <span class="story-tag" style="--tag-delay: 320ms">User Roles</span>
+            <span class="story-tag" style="--tag-delay: 380ms">Workflow Mapping</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-hidden="true"></div>
+        <a href="#chapter-09" class="scroll-indicator" aria-label="Continue reading">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- .09 The Question -->
+  <section class="section-wrapper story-section" id="chapter-09" data-section="09">
+    <span class="section-index">.09</span>
+    <div class="card-panel card-panel--story">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div class="story-quote-break">
+        <p class="story-chapter-label" data-reveal>Chapter 08</p>
+        <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">The Question That Remains</h2>
+        <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+          This project continues to shape how I approach software development today. Whenever I begin a new
+          project, I start by asking the same question that inspired TSSRS:
+        </p>
+        <p class="story-pullquote story-pullquote--large" data-reveal style="--reveal-delay: 200ms">
+          How does the workflow currently operate, and how can software make it better?
+        </p>
+        <div class="story-cta" data-reveal style="--reveal-delay: 320ms">
+          <a href="index.html#projects" class="btn-outline">Back to Projects</a>
+        </div>
+      </div>
+
+      <footer class="panel-footer">
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 7l10 7 10-7" />
+            </svg>
+          </a>
+          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </a>
+        </div>
+        <a href="index.html#projects" class="scroll-indicator" aria-label="Back to projects">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Back</span>
+        </a>
+      </footer>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p>Thanks for reading!</p>
+  </footer>
+
+  <style>
+    #gradient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+  <script src="js/minigl.js"></script>
+  <script>
+    const gradient = new Gradient();
+    gradient.initGradient('#gradient-canvas');
+  </script>
+  <script src="js/info-story.js"></script>
+</body>
+
+</html>

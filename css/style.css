@@ -892,6 +892,7 @@ svg {
   display: flex;
   gap: 1.75rem;
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 /* Marker column */

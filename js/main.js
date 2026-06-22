@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       formStatus.className = 'form-status';
 
       const SCRIPT_URL =
-        "https://script.google.com/macros/s/AKfycbwFLKoAeWDsyF4MCkBM403JxCoxfD1dNh8XoBAQxM6llK0BcEoGkC1xrun3tj99xNIg/exec";
+        "https://script.google.com/macros/s/AKfycbwCy4rLvlW0G9fEtIuF_27sYhkF7YL5BwtGba8w83Jy6I27EICoH1zPHIfZ7XOnJv5V/exec";
 
       try {
 
@@ -233,7 +233,7 @@ function renderProjects() {
                 class="btn-outline"
                 target="_blank"
                 rel="noopener noreferrer">
-                View Project
+                View Story
               </a>
             `
         : `
