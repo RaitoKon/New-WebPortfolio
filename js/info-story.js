@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const chapterNames = {
     '01': 'Introduction',
+    '01.1': 'The Summary',
     '02': 'The Observation',
     '03': 'Workflow First',
     '04': 'Mapping the System',

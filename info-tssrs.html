@@ -40,6 +40,8 @@
   <nav class="story-progress" aria-label="Story progress">
     <a href="#chapter-01" class="story-progress-dot active" data-section="01" aria-label="Introduction"></a>
     <span class="story-progress-line" aria-hidden="true"></span>
+    <a href="#chapter-01.1" class="story-progress-dot" data-section="01.1" aria-label="The Summary"></a>
+    <span class="story-progress-line" aria-hidden="true"></span>
     <a href="#chapter-02" class="story-progress-dot" data-section="02" aria-label="The Observation"></a>
     <span class="story-progress-line" aria-hidden="true"></span>
     <a href="#chapter-03" class="story-progress-dot" data-section="03" aria-label="Workflow First"></a>
@@ -115,11 +117,56 @@
             </svg>
           </a>
         </div>
-        <a href="#chapter-02" class="scroll-indicator" aria-label="Continue reading">
+        <a href="#chapter-01.1" class="scroll-indicator" aria-label="Continue reading">
           <span class="scroll-line"></span>
           <span class="scroll-text">Scroll</span>
         </a>
       </footer>
+    </div>
+  </section>
+
+   <!-- .01.1 The Summary -->
+   <section class="section-wrapper story-section" id="chapter-01.1" data-section="01.1">
+    <span class="section-index">.01.1</span>
+    <div class="card-panel card-panel--story" style="min-height: auto; max-width: 40rem;">
+      <header class="panel-header">
+        <a href="index.html" class="story-back-link" aria-label="Back to portfolio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Portfolio
+        </a>
+      </header>
+
+      <div style="margin-top: 7rem;">
+        <div class="story-copy">
+          <p class="story-chapter-label" data-reveal>The Summary</p>
+          <h2 class="story-chapter-title" data-reveal style="--reveal-delay: 60ms">What is TSSRS?</h2>      
+          <p class="story-body" data-reveal style="--reveal-delay: 120ms">
+            The Technical Support Service Request System (TSSRS) is a web-based platform
+            developed for the Iloilo City Government to streamline the management of
+            technical support requests. It enables every offices accross the City Hall to submit and track service
+            requests while allowing administrators and technicians to efficiently assign,
+            monitor, and resolve reported issues through a centralized workflow.
+          </p>
+
+          <p class="story-body" data-reveal style="--reveal-delay: 180ms">
+            By replacing manual processes with a digital system, TSSRS improves
+            communication, accountability, and response times while providing organized
+            records that help the City Management Information Systems Office deliver
+            faster and more reliable technical support.
+          </p>
+        </div>      
+        </div>
+
+        <footer class="panel-footer" style="margin-top: 5rem;">
+          <div class="social-links" aria-hidden="true"></div>
+          <a href="#chapter-02" class="scroll-indicator" aria-label="Continue reading">
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </footer>
+      </div>
     </div>
   </section>
 
@@ -388,9 +435,9 @@
           </div>
         </div>
         <div class="story-visual" data-reveal style="--reveal-delay: 200ms">
-          <img src="img/tssrs-story-erd.png" style="object-fit: cover; object-position: left;" alt="TSSRS admin dashboard showing request pipeline and metrics"
+          <img src="img/tssrs-story-erd.png" style="object-fit: cover; object-position: center; transform: scale(2);" alt="TSSRS admin dashboard showing request pipeline and metrics"
             data-parallax loading="lazy">
-          <span class="story-visual-caption">Live system demo</span>
+          <span class="story-visual-caption">Designing TSSRS</span>
         </div>
       </div>
 
@@ -431,7 +478,7 @@
           </p>
         </div>
         <div class="story-visual" data-reveal style="--reveal-delay: 180ms">
-          <img src="img/tssrs-story-team.png" alt="Team collaborating on requirements and workflow design"
+          <img src="img/tssrs-story-people.JPEG" style="transform: scale(1.5);" alt="Team collaborating on requirements and workflow design"
             data-parallax loading="lazy">
           <span class="story-visual-caption">People at the center of the process</span>
         </div>
@@ -474,11 +521,18 @@
             transparent system.
           </p>
           <div class="story-tags">
-            <span class="story-tag" style="--tag-delay: 200ms">Requirements</span>
-            <span class="story-tag" style="--tag-delay: 260ms">Database Design</span>
-            <span class="story-tag" style="--tag-delay: 320ms">User Roles</span>
-            <span class="story-tag" style="--tag-delay: 380ms">Workflow Mapping</span>
-            <span class="story-tag" style="--tag-delay: 440ms">Architecture</span>
+            <span class="story-tag" style="--tag-delay: 200ms">Vanilla PHP & JavaScript</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Database Design</span>
+            <span class="story-tag" style="--tag-delay: 200ms">Role-based Access</span>
+            <span class="story-tag" style="--tag-delay: 260ms">Hierarchical Account Management</span>
+            <span class="story-tag" style="--tag-delay: 260ms">Authentication & Authorization</span>
+            <span class="story-tag" style="--tag-delay: 320ms">Custom API</span>
+            <span class="story-tag" style="--tag-delay: 380ms">Custom UI/UX</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Custom MVC Architecture</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Business Process Automation</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Built-in Messaging System</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Email Notification System</span>
+            <span class="story-tag" style="--tag-delay: 440ms">Audit & Activity Logs</span>
           </div>
         </div>
       </div>
