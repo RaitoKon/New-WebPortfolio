@@ -1,587 +1,840 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tairo Deoni E. Garcia — Junior Full Stack Developer specializing in workflow-driven systems for government and organizational operations."
+    />
+    <title>Tairo Garcia — Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Tairo Deoni E. Garcia — Junior Full Stack Developer specializing in workflow-driven systems for government and organizational operations.">
-  <title>Tairo Garcia — Web Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Syne:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/carousel.css">
-  <link rel="stylesheet" href="css/animation.css">
-</head>
+  <body>
+    <canvas
+      style="
+        --gradient-color-1: #1a1a1a;
+        --gradient-color-2: #1e1e1e;
+        --gradient-color-3: #2b2b2b;
+        --gradient-color-4: #3c3c3c;
+      "
+      id="gradient-canvas"
+      data-transition-in
+    >
+    </canvas>
 
-<body>
-  <canvas style="
-      --gradient-color-1:#1a1a1a;
-      --gradient-color-2:#1e1e1e;
-      --gradient-color-3:#2b2b2b;
-      --gradient-color-4:#3c3c3c;
-    " id="gradient-canvas" data-transition-in>
-  </canvas>
+    <div class="page-grain" aria-hidden="true"></div>
 
-  <div class="page-grain" aria-hidden="true"></div>
-
-  <!-- Section .01 — Hero -->
-  <section class="section-wrapper" id="hero" data-section="01">
-    <span class="section-index">.01</span>
-    <div class="card-panel">
-      <header class="panel-header">
-        <a href="#hero" class="logo" aria-label="Tairo Garcia home">
-          <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
-        </a>
-        <nav class="panel-nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#developer-info">Developer Info</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <div class="hero-content">
-        <p class="hero-eyebrow">Web Portfolio 2026</p>
-        <span class="logo-line"> Tairo Deoni</span>
-        <h1 class="hero-title">GARCIA</h1>
-        <p class="hero-subtitle">Full Stack Developer</p>
-        <p class="hero-description">
-          Building role-based, workflow-driven systems for government and organizational operations —
-          translating real-world processes into scalable digital solutions.
-        </p>
-        <div class="hero-skills" aria-label="Core technologies">
-          <span>PHP</span>
-          <span>C#</span>
-          <span>Python</span>
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>ASP.NET Core</span>
-          <span>Azure</span>
-          <span>SQL Server</span>
-          <span>MySQL</span>
-          <span>Tailwind CSS</span>
-          <span>Bootstrap</span>
-          <span>Blazor</span>
-          <span>Power BI</span>
-          <span>Figma</span>
-          <span>Adobe Photoshop</span>
-        </div>
-      </div>
-
-      <footer class="panel-footer">
-        <div class="social-links" aria-label="Social links">
-          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M2 7l10 7 10-7" />
-            </svg>
+    <!-- Section .01 — Hero -->
+    <section class="section-wrapper" id="hero" data-section="01">
+      <span class="section-index">.01</span>
+      <div class="card-panel">
+        <header class="panel-header">
+          <a href="#hero" class="logo" aria-label="Tairo Garcia home">
+            <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
           </a>
-          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tairo-deoni-garcia" target="_blank" rel="noopener noreferrer"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-        <a href="#projects" class="scroll-indicator" aria-label="Scroll to projects">
-          <span class="scroll-line"></span>
-          <span class="scroll-text">Scroll</span>
-        </a>
-      </footer>
-    </div>
-  </section>
+          <nav class="panel-nav" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#developer-info">Developer Info</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-  <!-- Section .02 — Projects -->
-  <section class="section-wrapper" id="projects" data-section="02">
-    <span class="section-index">.02</span>
-    <div class="card-panel">
-      <header class="panel-header">
-        <a href="#hero" class="logo" aria-label="Tairo Garcia home">
-          <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
-        </a>
-        <nav class="panel-nav" aria-label="Primary">
-          <a href="#projects" class="active">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#developer-info">Developer Info</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <div class="project-tabs"></div>
-      <div class="projects-container"></div>
-
-      <footer class="panel-footer">
-        <div class="social-links" aria-label="Social links">
-          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M2 7l10 7 10-7" />
-            </svg>
-          </a>
-          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tairo-deoni-garcia" target="_blank" rel="noopener noreferrer"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-        <a href="#experience" class="scroll-indicator" aria-label="Scroll to experience">
-          <span class="scroll-line"></span>
-          <span class="scroll-text">Scroll</span>
-        </a>
-      </footer>
-    </div>
-  </section>
-
-  <!-- Section .03 — Work Experience -->
-  <section class="section-wrapper" id="experience" data-section="03">
-    <span class="section-index">.03</span>
-    <div class="card-panel card-panel--experience">
-      <header class="panel-header">
-        <a href="#hero" class="logo" aria-label="Tairo Garcia home">
-          <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
-        </a>
-        <nav class="panel-nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#experience" class="active">Experience</a>
-          <a href="#developer-info">Developer Info</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
-
-      <div class="experience-content">
-        <div class="experience-header">
-          <h2 class="experience-heading">Work Experience</h2>
-          <p class="experience-intro">
-            Hands-on roles where I built and shipped real systems for real organizations.
+        <div class="hero-content">
+          <p class="hero-eyebrow">Web Portfolio 2026</p>
+          <span class="logo-line"> Tairo Deoni</span>
+          <h1 class="hero-title">GARCIA</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            Building role-based, workflow-driven systems for government and
+            organizational operations — translating real-world processes into
+            scalable digital solutions.
           </p>
+          <div class="hero-skills" aria-label="Core technologies">
+            <span>PHP</span>
+            <span>C#</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>ASP.NET Core</span>
+            <span>Azure</span>
+            <span>SQL Server</span>
+            <span>MySQL</span>
+            <span>Tailwind CSS</span>
+            <span>Bootstrap</span>
+            <span>Blazor</span>
+            <span>Power BI</span>
+            <span>Figma</span>
+            <span>Adobe Photoshop</span>
+          </div>
         </div>
 
-        <ol class="experience-timeline">
-
-          <li class="exp-item">
-            <div class="exp-marker">
-              <span class="exp-dot"></span>
-              <span class="exp-line"></span>
-            </div>
-            <div class="exp-body">
-              <div class="exp-meta">
-                <span class="exp-period">Jan 2026 — May 2026</span>
-                <span class="exp-type">On-the-Job Training</span>
-              </div>
-              <h3 class="exp-role">Full Stack Developer Intern</h3>
-              <p class="exp-org">Data Assessment and System Management Office, ICT Division<br>
-                <em>
-                  Technical Support Service Request System (TSSRS)
-                </em>
-              </p>
-              <ul class="exp-highlights">
-                <li>Designed and developed TSSRS — a centralized, role-based technical support service request system
-                  replacing paper-based workflows across 70+ city hall offices.</li>
-                <li>Implemented full request lifecycle: submission, approval, technician assignment, real-time tracking,
-                  and completion reports.</li>
-                <li>Built with PHP, MySQL, and MVC architecture; deployed internally across city departments.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>PHP Native</span><span>Vanilla JS</span><span>Custom
-                  UI/UX</span><span>Bootstrap</span><span>MySQL</span><span>MVC</span><span>RBAC</span>
-              </div>
-            </div>
-          </li>
-
-          <li class="exp-item">
-            <div class="exp-marker">
-              <span class="exp-dot"></span>
-            </div>
-            <div class="exp-body">
-              <div class="exp-meta">
-                <span class="exp-period">Aug 2024 — Dec 2025</span>
-                <span class="exp-type">Academic / Freelance</span>
-              </div>
-              <h3 class="exp-role">Full Stack Developer</h3>
-              <p class="exp-org">Iloilo Girl Scout Council<br>
-                <em>
-                  AbansiBabayi: A Web-Based Management System for Iloilo Girl Scout Council
-                </em>
-              </p>
-              <ul class="exp-highlights">
-                <li>Built a multi-entity registration and approval system for Scout and Troop Leader management across
-                  Iloilo province.</li>
-                <li>Integrated event management, POS inventory tracking, and hierarchical approval workflows.</li>
-                <li>Deployed on Microsoft Azure with SQL Server; handled CI/CD and production environment setup.</li>
-              </ul>
-              <div class="exp-tags">
-                <span>C#</span><span>ASP.NET Core</span><span>Blazor</span><span>MudBlazor</span><span>MS SQL
-                  Server</span><span>Azure</span>
-              </div>
-            </div>
-          </li>
-
-        </ol>
+        <footer class="panel-footer">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/RaitoKon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tairo-deoni-garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#projects"
+            class="scroll-indicator"
+            aria-label="Scroll to projects"
+          >
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </footer>
       </div>
+    </section>
 
-      <footer class="panel-footer">
-        <div class="social-links" aria-label="Social links">
-          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M2 7l10 7 10-7" />
-            </svg>
+    <!-- Section .02 — Projects -->
+    <section class="section-wrapper" id="projects" data-section="02">
+      <span class="section-index">.02</span>
+      <div class="card-panel">
+        <header class="panel-header">
+          <a href="#hero" class="logo" aria-label="Tairo Garcia home">
+            <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
           </a>
-          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tairo-deoni-garcia" target="_blank" rel="noopener noreferrer"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-        <a href="#developer-info" class="scroll-indicator" aria-label="Scroll to developer info">
-          <span class="scroll-line"></span>
-          <span class="scroll-text">Scroll</span>
-        </a>
-      </footer>
-    </div>
-  </section>
+          <nav class="panel-nav" aria-label="Primary">
+            <a href="#projects" class="active">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#developer-info">Developer Info</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
 
-  <!-- Section .04 — Developer Info -->
-  <section class="section-wrapper" id="developer-info" data-section="04">
-    <span class="section-index">.04</span>
-    <div class="card-panel card-panel--developer">
-      <header class="panel-header">
-        <a href="#hero" class="logo" aria-label="Tairo Garcia home">
-          <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
-        </a>
-        <nav class="panel-nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#developer-info" class="active">Developer Info</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+        <div class="project-tabs"></div>
+        <div class="projects-container"></div>
 
-      <div>
-        <div class="developer-content">
-          <div class="developer-profile">
-            <h2 class="developer-heading">Developer Info</h2>
-            <p class="developer-intro">
-              A bit about who I am beyond the code — background, experiences, achievements, and what drives the work.
+        <footer class="panel-footer">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/RaitoKon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tairo-deoni-garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#experience"
+            class="scroll-indicator"
+            aria-label="Scroll to experience"
+          >
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Section .03 — Work Experience -->
+    <section class="section-wrapper" id="experience" data-section="03">
+      <span class="section-index">.03</span>
+      <div class="card-panel card-panel--experience">
+        <header class="panel-header">
+          <a href="#hero" class="logo" aria-label="Tairo Garcia home">
+            <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
+          </a>
+          <nav class="panel-nav" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience" class="active">Experience</a>
+            <a href="#developer-info">Developer Info</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+
+        <div class="experience-content">
+          <div class="experience-header">
+            <h2 class="experience-heading">Work Experience</h2>
+            <p class="experience-intro">
+              Hands-on roles where I built and shipped real systems for real
+              organizations.
             </p>
+          </div>
 
-            <div class="developer-image-container">
-              <button class="slider-btn slider-btn--left" id="prevDevPhoto" aria-label="Previous photo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-              </button>
-              <div class="developer-image">
-                <img src="img/image1.jpg" alt="Tairo Garcia — Full Stack Developer (Photo 1)"
-                  class="slider-image active" loading="lazy">
-                <img src="img/image2.jpg" alt="Tairo Garcia — Full Stack Developer (Photo 2)" class="slider-image"
-                  loading="lazy">
+          <ol class="experience-timeline">
+            <li class="exp-item">
+              <div class="exp-marker">
+                <span class="exp-dot"></span>
+                <span class="exp-line"></span>
               </div>
-              <button class="slider-btn slider-btn--right" id="nextDevPhoto" aria-label="Next photo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round">
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-              </button>
-              <div class="slider-dots" id="devPhotoDots">
-                <button class="slider-dot active" data-slide="0" aria-label="Photo 1"></button>
-                <button class="slider-dot" data-slide="1" aria-label="Photo 2"></button>
+              <div class="exp-body">
+                <div class="exp-meta">
+                  <span class="exp-period">Jan 2026 — May 2026</span>
+                  <span class="exp-type">On-the-Job Training</span>
+                </div>
+                <h3 class="exp-role">Full Stack Developer Intern</h3>
+                <p class="exp-org">
+                  Data Assessment and System Management Office, ICT Division<br />
+                  <em> Technical Support Service Request System (TSSRS) </em>
+                </p>
+                <ul class="exp-highlights">
+                  <li>
+                    Designed and developed TSSRS — a centralized, role-based
+                    technical support service request system replacing
+                    paper-based workflows across 70+ city hall offices.
+                  </li>
+                  <li>
+                    Implemented full request lifecycle: submission, approval,
+                    technician assignment, real-time tracking, and completion
+                    reports.
+                  </li>
+                  <li>
+                    Built with PHP, MySQL, and MVC architecture; deployed
+                    internally across city departments.
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span>PHP Native</span><span>Vanilla JS</span
+                  ><span>Custom UI/UX</span><span>Bootstrap</span
+                  ><span>MySQL</span><span>MVC</span><span>RBAC</span>
+                </div>
               </div>
+            </li>
+
+            <li class="exp-item">
+              <div class="exp-marker">
+                <span class="exp-dot"></span>
+              </div>
+              <div class="exp-body">
+                <div class="exp-meta">
+                  <span class="exp-period">Aug 2024 — Dec 2025</span>
+                  <span class="exp-type">Academic / Freelance</span>
+                </div>
+                <h3 class="exp-role">Full Stack Developer</h3>
+                <p class="exp-org">
+                  Iloilo Girl Scout Council<br />
+                  <em>
+                    AbansiBabayi: A Web-Based Management System for Iloilo Girl
+                    Scout Council
+                  </em>
+                </p>
+                <ul class="exp-highlights">
+                  <li>
+                    Built a multi-entity registration and approval system for
+                    Scout and Troop Leader management across Iloilo province.
+                  </li>
+                  <li>
+                    Integrated event management, POS inventory tracking, and
+                    hierarchical approval workflows.
+                  </li>
+                  <li>
+                    Deployed on Microsoft Azure with SQL Server; handled CI/CD
+                    and production environment setup.
+                  </li>
+                </ul>
+                <div class="exp-tags">
+                  <span>C#</span><span>ASP.NET Core</span><span>Blazor</span
+                  ><span>MudBlazor</span><span>MS SQL Server</span
+                  ><span>Azure</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <footer class="panel-footer">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/RaitoKon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tairo-deoni-garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#developer-info"
+            class="scroll-indicator"
+            aria-label="Scroll to developer info"
+          >
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Section .04 — Developer Info -->
+    <section class="section-wrapper" id="developer-info" data-section="04">
+      <span class="section-index">.04</span>
+      <div class="card-panel card-panel--developer">
+        <header class="panel-header">
+          <a href="#hero" class="logo" aria-label="Tairo Garcia home">
+            <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
+          </a>
+          <nav class="panel-nav" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#developer-info" class="active">Developer Info</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </header>
+
+        <div>
+          <div class="developer-content">
+            <div class="developer-profile">
+              <h2 class="developer-heading">Developer Info</h2>
+              <p class="developer-intro">
+                A bit about who I am beyond the code — background, experiences,
+                achievements, and what drives the work.
+              </p>
+
+              <div class="developer-image-container">
+                <button
+                  class="slider-btn slider-btn--left"
+                  id="prevDevPhoto"
+                  aria-label="Previous photo"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <div class="developer-image">
+                  <img
+                    src="img/image1.jpg"
+                    alt="Tairo Garcia — Full Stack Developer (Photo 1)"
+                    class="slider-image active"
+                    loading="lazy"
+                  />
+                  <img
+                    src="img/image2.jpg"
+                    alt="Tairo Garcia — Full Stack Developer (Photo 2)"
+                    class="slider-image"
+                    loading="lazy"
+                  />
+                </div>
+                <button
+                  class="slider-btn slider-btn--right"
+                  id="nextDevPhoto"
+                  aria-label="Next photo"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <div class="slider-dots" id="devPhotoDots">
+                  <button
+                    class="slider-dot active"
+                    data-slide="0"
+                    aria-label="Photo 1"
+                  ></button>
+                  <button
+                    class="slider-dot"
+                    data-slide="1"
+                    aria-label="Photo 2"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="developer-details-column">
+              <dl class="developer-details">
+                <div class="developer-item">
+                  <dt>Full Name</dt>
+                  <dd>Tairo Deoni E. Garcia</dd>
+                </div>
+                <div class="developer-item">
+                  <dt>Role</dt>
+                  <dd>Full Stack Developer</dd>
+                </div>
+                <div class="developer-item">
+                  <dt>Location</dt>
+                  <dd>Parara Norte, Tigbauan · Iloilo, Philippines</dd>
+                </div>
+                <div class="developer-item">
+                  <dt>Education</dt>
+                  <dd>
+                    <strong>Central Philippine University</strong> — Jaro,
+                    Iloilo City<br />
+                    Bachelor of Science in Information Technology · 2022 –
+                    2026<br />
+                    <em
+                      >Major in Database Design, Management & Administration</em
+                    >
+                  </dd>
+                </div>
+                <div class="developer-item">
+                  <dt>About</dt>
+                  <dd>
+                    I recently graduated from Central Philippine University and
+                    enjoy building systems that solve real organizational
+                    problems. Through working with government offices and
+                    nonprofit organizations in Iloilo, I learned that effective
+                    software should reflect how people actually work. I am
+                    particularly interested in role-based systems, approval
+                    workflows, and process automation that replace manual and
+                    paper-based operations. My approach focuses on understanding
+                    the people and processes behind a problem before designing a
+                    solution. I aim to create technology that is practical,
+                    reliable, and meaningful to the organizations that use it.
+                  </dd>
+                </div>
+              </dl>
             </div>
           </div>
 
-          <div class="developer-details-column">
-            <dl class="developer-details">
-              <div class="developer-item">
-                <dt>Full Name</dt>
-                <dd>Tairo Deoni E. Garcia</dd>
+          <div class="developer-other-items">
+            <div class="developer-item" style="flex: 1">
+              <dt>Leadership Experience</dt>
+              <dd>
+                <ul class="awards-list">
+                  <li class="award-item">
+                    <span class="award-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <path d="M3 10h18" />
+                        <path d="M5 10v12" />
+                        <path d="M9 10v12" />
+                        <path d="M15 10v12" />
+                        <path d="M19 10v12" />
+                        <path d="M2 22h20" />
+                        <path d="M12 3l9 5H3z" />
+                      </svg>
+                    </span>
+                    <span class="award-body">
+                      <strong
+                        >Representative - College of Computer Studies</strong
+                      >
+                      <em>CPU Republic 21st Parliament· 2025 - 2026</em>
+                    </span>
+                  </li>
+                  <li class="award-item">
+                    <span class="award-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M5 21c0-3.866 3.134-7 7-7s7 3.134 7 7" />
+                      </svg>
+                    </span>
+                    <span class="award-body">
+                      <strong>President</strong>
+                      <em
+                        >Information Technology Students Organization · 2024 -
+                        2025</em
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+            <div class="developer-item" style="flex: 1">
+              <dt>Honors &amp; Awards</dt>
+              <dd>
+                <ul class="awards-list">
+                  <li class="award-item">
+                    <span class="award-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="8" r="6" />
+                        <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
+                      </svg>
+                    </span>
+                    <span class="award-body">
+                      <strong
+                        >Cum Laude - Bachelor of Science in Information
+                        Technology</strong
+                      >
+                      <em>Central Philippine University · 2026</em>
+                    </span>
+                  </li>
+                  <li class="award-item">
+                    <span class="award-icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                        />
+                      </svg>
+                    </span>
+                    <span class="award-body">
+                      <strong
+                        >Best in Thesis Presentation (AbansiBabayi)</strong
+                      >
+                      <em>CPU College of Computer Studies · 2026</em>
+                    </span>
+                  </li>
+                </ul>
+              </dd>
+            </div>
+          </div>
+        </div>
+
+        <footer class="panel-footer">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/RaitoKon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tairo-deoni-garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+          <a
+            href="#contact"
+            class="scroll-indicator"
+            aria-label="Scroll to contact"
+          >
+            <span class="scroll-line"></span>
+            <span class="scroll-text">Scroll</span>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Section .05 — Contact -->
+    <section class="section-wrapper" id="contact" data-section="05">
+      <span class="section-index">.05</span>
+      <div class="card-panel card-panel--contact">
+        <header class="panel-header">
+          <a href="#hero" class="logo" aria-label="Tairo Garcia home">
+            <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
+          </a>
+          <nav class="panel-nav" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#developer-info">Developer Info</a>
+            <a href="#contact" class="active">Contact</a>
+          </nav>
+        </header>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="contact-heading">Contact</h2>
+            <p class="contact-intro">
+              Open to full-time opportunities, freelance projects, and
+              collaborations. Let's build something that makes real operations
+              run smoother.
+            </p>
+            <dl class="contact-details">
+              <div class="contact-item">
+                <dt>Address</dt>
+                <dd>Parara Norte, Tigbauan<br />Iloilo, Philippines</dd>
               </div>
-              <div class="developer-item">
-                <dt>Role</dt>
-                <dd>Full Stack Developer</dd>
+              <div class="contact-item">
+                <dt>Phone</dt>
+                <dd><a href="tel:+639948207103">+63 994 820 7103</a></dd>
               </div>
-              <div class="developer-item">
-                <dt>Location</dt>
-                <dd>Parara Norte, Tigbauan · Iloilo, Philippines</dd>
-              </div>
-              <div class="developer-item">
-                <dt>Education</dt>
+              <div class="contact-item">
+                <dt>E-mail</dt>
                 <dd>
-                  <strong>Central Philippine University</strong> — Jaro, Iloilo City<br>
-                  Bachelor of Science in Information Technology · 2022 – 2026<br>
-                  <em>Major in Database Design, Management & Administration</em>
-                </dd>
-              </div>
-              <div class="developer-item">
-                <dt>About</dt>
-                <dd>
-                  I recently graduated from Central Philippine University and enjoy building systems that solve real
-                  organizational problems. Through working with government offices and nonprofit organizations in
-                  Iloilo,
-                  I learned that effective software should reflect how people actually work. I am particularly
-                  interested
-                  in role-based systems, approval workflows, and process automation that replace manual and paper-based
-                  operations. My approach focuses on understanding the people and processes behind a problem before
-                  designing a solution. I aim to create technology that is practical, reliable, and meaningful to the
-                  organizations that use it.
+                  <a href="mailto:raikongarcia@gmail.com"
+                    >raikongarcia@gmail.com</a
+                  >
                 </dd>
               </div>
             </dl>
           </div>
-        </div>
 
-        <div class="developer-other-items">
-          <div class="developer-item" style="flex: 1">
-            <dt>Leadership Experience</dt>
-            <dd>
-              <ul class="awards-list">
-                <li class="award-item">
-                  <span class="award-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <path d="M3 10h18" />
-                      <path d="M5 10v12" />
-                      <path d="M9 10v12" />
-                      <path d="M15 10v12" />
-                      <path d="M19 10v12" />
-                      <path d="M2 22h20" />
-                      <path d="M12 3l9 5H3z" />
-                    </svg>
-                  </span>
-                  <span class="award-body">
-                    <strong>Representative - College of Computer Studies</strong>
-                    <em>CPU Republic 21st Parliament· 2025 - 2026</em>
-                  </span>
-                </li>
-                <li class="award-item">
-                  <span class="award-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="7" r="4" />
-                      <path d="M5 21c0-3.866 3.134-7 7-7s7 3.134 7 7" />
-                    </svg>
-                  </span>
-                  <span class="award-body">
-                    <strong>President</strong>
-                    <em>Information Technology Students Organization · 2024 - 2025</em>
-                  </span>
-                </li>
-              </ul>
-            </dd>
-          </div>
-          <div class="developer-item" style="flex: 1;">
-            <dt>Honors &amp; Awards</dt>
-            <dd>
-              <ul class="awards-list">
-                <li class="award-item">
-                  <span class="award-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <circle cx="12" cy="8" r="6" />
-                      <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
-                    </svg>
-                  </span>
-                  <span class="award-body">
-                    <strong>Cum Laude - Bachelor of Science in Information Technology</strong>
-                    <em>Central Philippine University · 2026</em>
-                  </span>
-                </li>
-                <li class="award-item">
-                  <span class="award-icon" aria-hidden="true">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <path
-                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  </span>
-                  <span class="award-body">
-                    <strong>Best in Thesis Presentation (AbansiBabayi)</strong>
-                    <em>CPU College of Computer Studies · 2026</em>
-                  </span>
-                </li>
-              </ul>
-            </dd>
-          </div>
-        </div>
-      </div>
-
-      <footer class="panel-footer">
-        <div class="social-links" aria-label="Social links">
-          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M2 7l10 7 10-7" />
-            </svg>
-          </a>
-          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tairo-deoni-garcia" target="_blank" rel="noopener noreferrer"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-        <a href="#contact" class="scroll-indicator" aria-label="Scroll to contact">
-          <span class="scroll-line"></span>
-          <span class="scroll-text">Scroll</span>
-        </a>
-      </footer>
-    </div>
-  </section>
-
-  <!-- Section .05 — Contact -->
-  <section class="section-wrapper" id="contact" data-section="05">
-    <span class="section-index">.05</span>
-    <div class="card-panel card-panel--contact">
-      <header class="panel-header">
-        <a href="#hero" class="logo" aria-label="Tairo Garcia home">
-          <span class="logo-line"><img src="img/logo1.png" alt="TDG" /></span>
-        </a>
-        <nav class="panel-nav" aria-label="Primary">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#developer-info">Developer Info</a>
-          <a href="#contact" class="active">Contact</a>
-        </nav>
-      </header>
-
-      <div class="contact-content">
-        <div class="contact-info">
-          <h2 class="contact-heading">Contact</h2>
-          <p class="contact-intro">
-            Open to full-time opportunities, freelance projects, and collaborations.
-            Let's build something that makes real operations run smoother.
-          </p>
-          <dl class="contact-details">
-            <div class="contact-item">
-              <dt>Address</dt>
-              <dd>Parara Norte, Tigbauan<br>Iloilo, Philippines</dd>
-            </div>
-            <div class="contact-item">
-              <dt>Phone</dt>
-              <dd><a href="tel:+639948207103">+63 994 820 7103</a></dd>
-            </div>
-            <div class="contact-item">
-              <dt>E-mail</dt>
-              <dd><a href="mailto:raikongarcia@gmail.com">raikongarcia@gmail.com</a></dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="contact-form-card">
-          <h3 class="form-heading">Contact Form</h3>
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+          <div class="contact-form-card">
+            <h3 class="form-heading">Contact Form</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
               </div>
               <div class="form-group">
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+                <label for="email">Your e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                />
               </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Your e-mail</label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-            <div class="form-group">
-              <label for="phoneNo">Your Phone No.</label>
-              <input type="phoneNo" id="phoneNo" name="phoneNo" autocomplete="phoneNo" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message</button>
-            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-            <div class="hp-field" aria-hidden="true">
-              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-            </div>
-          </form>
+              <div class="form-group">
+                <label for="phoneNo">Your Phone No.</label>
+                <input
+                  type="phoneNo"
+                  id="phoneNo"
+                  name="phoneNo"
+                  autocomplete="phoneNo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Send Message</button>
+              <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+              <div class="hp-field" aria-hidden="true">
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+          </div>
         </div>
+
+        <footer class="panel-footer">
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M2 7l10 7 10-7" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/RaitoKon"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tairo-deoni-garcia"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+        </footer>
       </div>
+    </section>
 
-      <footer class="panel-footer">
-        <div class="social-links" aria-label="Social links">
-          <a href="mailto:raikongarcia@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="2" y="4" width="20" height="16" rx="2" />
-              <path d="M2 7l10 7 10-7" />
-            </svg>
-          </a>
-          <a href="https://github.com/RaitoKon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.021C22 6.484 17.522 2 12 2z" />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/tairo-deoni-garcia" target="_blank" rel="noopener noreferrer"
-            aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.127 0 2.065 2.065 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-            </svg>
-          </a>
-        </div>
-      </footer>
-    </div>
-  </section>
+    <footer class="page-footer">
+      <p>Thanks for visiting!</p>
+    </footer>
 
-  <footer class="page-footer">
-    <p>Thanks for visiting!</p>
-  </footer>
+    <style>
+      #gradient-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+      }
+    </style>
+    <script src="js/minigl.js"></script>
+    <script src="js/project-data.js"></script>
+    <script>
+      const gradient = new Gradient();
+      gradient.initGradient("#gradient-canvas");
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/animation.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YYFXS88009"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <style>
-    #gradient-canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      pointer-events: none;
-    }
-  </style>
-  <script src="js/minigl.js"></script>
-  <script src="js/project-data.js"></script>
-  <script>
-    const gradient = new Gradient();
-    gradient.initGradient('#gradient-canvas');
-  </script>
-  <script src="js/main.js"></script>
-  <script src="js/animation.js"></script>
-</body>
-
+      gtag("config", "G-YYFXS88009");
+    </script>
+  </body>
 </html>
